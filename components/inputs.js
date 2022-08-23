@@ -39,9 +39,20 @@ export default function InputAdornments() {
   return (
     <Box sx={{ display: "flex", flexWrap: "wrap" }}>
       <div>
-      <TextField sx={{width: "45ch"}} id="outlined-basic" placeholder="Ingresa tu usuario" variant="outlined" />
+        <TextField
+          sx={
+            { width: "45ch", 
+            backgroundColor: "white",
+            borderRadius: "5px",
+            border: "1px solid #5EA3A380",
+            
+        }
+        }
+          id="outlined-basic"
+          placeholder="Ingresa tu usuario"
+          variant="outlined"
+        />
         <FormControl sx={{ m: 1, width: "45ch" }} variant="outlined">
-
           <OutlinedInput
             className="input"
             id="outlined-adornment-password"
