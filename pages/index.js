@@ -2,7 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/login.module.css";
 import Inputs from "../components/inputs";
-
+import SignupForm from "../components/formexample";
+import {makeStyles} from "@material-ui/core/styles";
 
 export default function Home() {
   return (
@@ -15,13 +16,23 @@ export default function Home() {
       <div className={styles.body}>
         <div className={styles.left}>
           <div className={styles.centered}>
-          <Image src='/assets/Icono Smart + Texto.svg' height={98} width={332} />
-          <Inputs/>
+            <Image
+              src="/assets/Icono Smart + Texto.svg"
+              height={78}
+              width={312}
+              alt="Smart Evolution"
+              className={styles.logo}
+            />
+            <Inputs />
           </div>
         </div>
         <div className={styles.right}>
           <div className={styles.centered}>
-          <Image src='/assets/Ilustración - Inicio de sesión.svg' height={600} width={600} />
+            <Image
+              src="/assets/Ilustración - Inicio de sesión.svg"
+              height={700}
+              width={700}
+            />
           </div>
         </div>
       </div>
